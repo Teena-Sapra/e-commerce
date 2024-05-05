@@ -21,6 +21,13 @@ const cartRoutes = require('./routes/cart.routes');
 const ordersRoutes = require('./routes/orders.routes');
 
 const app = express();
+app.use(cors(
+  {
+    origin:["https://deploy-mern-1whq.vercel.app"],
+    methods:["POST","GET"],
+    credentials:true
+  }
+  ));
 
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
