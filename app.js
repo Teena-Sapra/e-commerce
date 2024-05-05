@@ -23,7 +23,7 @@ const ordersRoutes = require('./routes/orders.routes');
 const app = express();
 app.use(cors(
   {
-    origin:["https://deploy-mern-1whq.vercel.app"],
+    origin:["https://se-project-three.vercel.app/"],
     methods:["POST","GET"],
     credentials:true
   }
